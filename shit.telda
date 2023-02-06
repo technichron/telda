@@ -1,0 +1,17 @@
+.seg text
+.entry
+    ldi r2, str
+    ldi r3, 1
+loop:
+    load r1l, r2, r0
+    sub r0b, r0b, r1l
+    jez return
+    store r0, 0xffff, r1l
+    add r2, r2, r3
+    jmp loop
+return:
+    halt
+
+.seg data
+str:
+    .string ▀█▀ █▀▀ █   █▀▄ ▄▀█ ▀█\n █  ██▄ █▄▄ █▄▀ █▀█ █▄\0

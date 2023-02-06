@@ -1,0 +1,249 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'telda2'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=telda2"
+                ],
+                "filter": {
+                    "name": "telda2",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 't'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=t",
+                    "--package=telda2"
+                ],
+                "filter": {
+                    "name": "t",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 't'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=t",
+                    "--package=telda2"
+                ],
+                "filter": {
+                    "name": "t",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'tc'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=tc",
+                    "--package=telda2"
+                ],
+                "filter": {
+                    "name": "tc",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'tc'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=tc",
+                    "--package=telda2"
+                ],
+                "filter": {
+                    "name": "tc",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'tdbg'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=tdbg",
+                    "--package=telda2"
+                ],
+                "filter": {
+                    "name": "tdbg",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'tdbg'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=tdbg",
+                    "--package=telda2"
+                ],
+                "filter": {
+                    "name": "tdbg",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'tl'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=tl",
+                    "--package=telda2"
+                ],
+                "filter": {
+                    "name": "tl",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'tl'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=tl",
+                    "--package=telda2"
+                ],
+                "filter": {
+                    "name": "tl",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'tobjdump'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=tobjdump",
+                    "--package=telda2"
+                ],
+                "filter": {
+                    "name": "tobjdump",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'tobjdump'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=tobjdump",
+                    "--package=telda2"
+                ],
+                "filter": {
+                    "name": "tobjdump",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'tstrip'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=tstrip",
+                    "--package=telda2"
+                ],
+                "filter": {
+                    "name": "tstrip",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'tstrip'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=tstrip",
+                    "--package=telda2"
+                ],
+                "filter": {
+                    "name": "tstrip",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

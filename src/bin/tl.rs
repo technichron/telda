@@ -3,7 +3,7 @@ use std::{
     fs::{self, File},
     io::{self, Seek, Write},
     num::ParseIntError,
-    os::unix::prelude::PermissionsExt,
+    // os::unix::prelude::PermissionsExt,
     path::PathBuf,
     process::ExitCode,
 };
@@ -297,7 +297,7 @@ fn tl_main() -> Result<(), Error> {
         obj.write_to_file(&out).map_err(Error::Io)?;
 
         let mut perms = fs::metadata(&out).map_err(Error::Io)?.permissions();
-        perms.set_mode(perms.mode() | 0o111);
+        // perms.set_mode(perms.mode() | 0o111);
         fs::set_permissions(&out, perms).map_err(Error::Io)?;
     } else {
         obj.write_to_file(out).map_err(Error::Io)?;
